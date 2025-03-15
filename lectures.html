@@ -5,24 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Live Lectures</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Michael Jackson Theme */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #ff004f, #000000); /* Red and black MJ vibe */
+            color: white;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff004f; /* Bold Red */
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            background: rgba(0, 0, 0, 0.7); /* Dark background for section */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        /* Button Styling for Download Links */
+        .download-btn {
+            background-color: #ff004f;
+            color: white;
+            padding: 15px 30px;
+            margin: 20px 0;
+            text-decoration: none;
+            font-size: 1.5rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #000000;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Navigation Links at the Bottom */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #000;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff004f;
+        }
+
+    </style>
 </head>
 <body>
-    <body style="background-color: cadetblue;"></body>
+
     <header>
-        <h1>Online Live Lectures</h1>
-        <nav>
-            <ul>
-            </ul>
-        </nav>
+        <h1>Live Lectures</h1>
     </header>
 
+    <!-- Live Lectures Update Section -->
     <section>
-        <h2> Updated News About My Online Live Lectures</h2>
-        <h3> March 12th: This will be a new series starting in the 2025-2026 academic year and continuing through the summer. I will be uploading YouTube videos of lectures on high school math, and possibly college math, as well as content on competitions and research.<h3> 
+        <h2 class="section-title">📢 Live Lectures Update</h2>
+        <h3>March 12th, 2025: New Lecture Series!</h3>
+        <p>This will be a new series starting in the 2025-2026 academic year and continuing through the summer. I will be uploading YouTube videos of lectures on high school math, and possibly college math, as well as content on competitions and research.</p>
     </section>
 
+    <!-- Live Lectures Video Section -->
+    <section>
+        <h2 class="section-title">🎥 Live Lecture Videos</h2>
+        <h3>Watch the Latest Live Lecture</h3>
+        <p>You can watch the latest lecture video here. Be sure to check back regularly for updates!</p>
+    </section>
+
+    <!-- Live Lectures Homework PDF Section -->
+    <section>
+        <h2 class="section-title">📄 Live Lectures Homework PDF</h2>
+        <h3>Download Your Homework Assignments</h3>
+        <p>Homework will be posted every week. Click the link below to download the PDF for the current week's homework.</p>
+    </section>
+
+    <!-- Navigation Buttons at the Bottom -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="delta.html">Bibliography</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="publications.html">Research Paper Publications, Programming Codes, & Scripts</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="tutoring.html">Tutoring Services</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
     <footer>
-        <p>&copy; Koo Kim & Delta's Math Academy | All rights reserved</p>
+        <p>&copy; 2025 Koo Kim & Delta's Math Academy | All rights reserved</p>
     </footer>
+
 </body>
 </html>
