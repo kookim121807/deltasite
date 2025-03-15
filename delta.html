@@ -4,43 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Koo+Kim&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Snowy Winter Background */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+            color: #333;
+            text-align: center;
+            position: relative;
+            height: 100%; /* Ensures scrolling ability */
+            overflow-x: hidden;
+        }
+
+        /* Snowfall Effect */
+        @keyframes snowfall {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(100vh); }
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: white;
+            opacity: 0.8;
+            font-size: 1.5rem;
+            animation: snowfall linear infinite;
+        }
+
+        /* Randomly Position Snowflakes */
+        .snowflake:nth-child(1) { left: 5%; animation-duration: 7s; }
+        .snowflake:nth-child(2) { left: 15%; animation-duration: 6s; }
+        .snowflake:nth-child(3) { left: 30%; animation-duration: 9s; }
+        .snowflake:nth-child(4) { left: 50%; animation-duration: 8s; }
+        .snowflake:nth-child(5) { left: 70%; animation-duration: 10s; }
+        .snowflake:nth-child(6) { left: 85%; animation-duration: 5s; }
+
+        /* Festive Header */
+        header {
+            background: linear-gradient(to right, #b71c1c, #ff7043);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 10px 0;
+            font-size: 2.5rem;
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 250px;
+            height: 330px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* White Frosty Box for Content */
+        .info-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 15px;
+            border: 4px solid #bbdefb;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: center;
+        }
+
+        .info-container h3 {
+            color: #ff7043;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .info-container p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: #b71c1c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Smooth Scroll Effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scroll Down Arrow */
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: white;
+            animation: bounce 1s infinite;
+        }
+
+        /* Bouncing Animation for Scroll Down Arrow */
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Styling for the button section */
+        .button-section {
+            text-align: center;
+            margin-top: 40px; /* Added margin between content and buttons */
+        }
+
+        .button-section a {
+            background-color: #ff7043;
+            color: white;
+            padding: 12px 30px;
+            margin: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-section a:hover {
+            background-color: #b71c1c; /* Darker red color on hover */
+        }
+    </style>
 </head>
 <body>
-    <body style="background-color: cadetblue;"></body>
+
+    <!-- Snowflakes -->
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+
     <header>
-        <div class="container">
-            <h1>Bibliography</h1>
-            <h2 class="title">About Koo Kim</h2>
-            <img src="./deltakim.jpg" width="180" height="250">
-            <nav>
-                <ul>
-                </ul>
-            </nav>
-        </div>
+        <h1>Bibliography</h1>
+        <h2 class="title">About Koo Kim</h2>
+        <img src="./deltakim.jpg" alt="Koo Kim's Photo" class="profile-img">
     </header>
 
-    <section id="intro">
-        <div class="container">
-            <h3>Here are some stories about me, sharing who I am, what I enjoy, and what interests me, among other things.</h3>
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-down">↓</div>
+
+    <section id="bio">
+        <div class="info-container">
+            <h3>Introduction</h3>
+            <p>Here are some stories about me, sharing who I am, what I enjoy, and what interests me, among other things.</p>
+            
+            <hr> <!-- Thin line to indicate section break -->
+
+            <h3>Education & Background</h3>
             <p><strong>Education:</strong> Ruamrudee International School, Bangkok, Thailand</p>
             <p><strong>Grade:</strong> 11th Grade (Class of "2026")</p>
-            <p><strong>Nickname:</strong> The Geometry Wizard of The Century, Delta Steiner, Heir of pythagoras, Little Waddington</p>
             <p><strong>Nationality:</strong> South Korean</p>
-            <p><strong>Current Core Courses:</strong> Real Analysis, Linear Algebra, Calculus II, AP Physics I, AP US History, IB English and Language Literature, Computer Science (Independent)</p>
-            <p><strong>Completed Core Courses:</strong> Calculus I, AP World History: Modern, Pre-Calculus, Euclidean Geometry Honors, Introduction to Hyperbolic Geometry </p>
-            <p><strong>Hobbies:</strong> Writing Mathematics Worksheets for Education, Basketball, Baseball, Golf, Music, Programming </p>
-            <p><strong>Favorite Celebrities:</strong> Stephen Curry, BTS, BigBang, NewJeans, Shohei Ohtani, Tom Holland, Euclid, Issace Newton, Archimedes, Jakob Steiner
-            <p><strong>Compeitions:</strong> Purple Comet, AMC 10</p>
-            <p><strong>Research Interests:</strong> Geometry, Topology, Number Theory, Combinatorics, Geometrical Proability, Game Theory, Geometrical Analysis, Functional Analysis, Real Analysis, Sports Analytics, Pure Math</P>
-        </P>I am involved in a mini research project focused on conjecturing a Euclidean geometry theorem about circles that involves the rules of tangency of circles, inscribed angles, and potentially Fermat's points and the Euler line.</P>
-            <p><strong>Additonal Interests:</strong> Cooking, Mystery Book, Greek Philosophy </p>
-            <p><strong>Currently Reading:</strong>  "Basic Real Analysis" by Anthony W. Knapp, "Topology" by James Munkres</p>
+
+            <hr>
+
+            <h3>Nicknames</h3>
+            <p>The Geometry Wizard of The Century, Delta Steiner, Heir of Pythagoras, Little Waddington</p>
+
+            <hr>
+
+            <h3>Courses</h3>
+            <p><strong>Current Core Courses:</strong> Real Analysis, Linear Algebra, Calculus II, AP Physics I, AP US History, IB English & Language Literature, Computer Science (Independent)</p>
+            <p><strong>Completed Core Courses:</strong> Calculus I, AP World History: Modern, Pre-Calculus, Euclidean Geometry Honors, Introduction to Hyperbolic Geometry</p>
+
+            <hr>
+
+            <h3>Hobbies</h3>
+            <p>Writing Mathematics Worksheets for Education, Basketball, Baseball, Golf, Music, Programming</p>
+
+            <hr>
+
+            <h3>Favorite Celebrities</h3>
+            <p>Stephen Curry, BTS, BigBang, NewJeans, Shohei Ohtani, Tom Holland, Euclid, Isaac Newton, Archimedes, Jakob Steiner</p>
+
+            <hr>
+
+            <h3>Competitions</h3>
+            <p>Purple Comet, AMC 10</p>
+
+            <hr>
+
+            <h3>Research Interests</h3>
+            <p>Geometry, Topology, Number Theory, Combinatorics, Geometrical Probability, Game Theory, Geometrical Analysis, Functional Analysis, Real Analysis, Sports Analytics, Pure Math</p>
+            <p>I am involved in a mini research project focused on conjecturing a Euclidean geometry theorem about circles that involves the rules of tangency of circles, inscribed angles, and potentially Fermat's points and the Euler line.</p>
+
+            <hr>
+
+            <h3>Additional Interests</h3>
+            <p>Cooking, Mystery Books, Greek Philosophy</p>
+
+            <hr>
+
+            <h3>Currently Reading</h3>
+            <p>"Basic Real Analysis" by Anthony W. Knapp, "Topology" by James Munkres</p>
+        </div>
     </section>
 
+    <!-- Buttons Section -->
+    <section class="button-section">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Research Paper Publications, Programming Codes, & Scripts</a>
+        <a href="books.html">Books</a>
+        <a href="tutoring.html">Tutoring Services</a>
+        <a href="lectures.html">Live Lectures</a>
+        <a href="contact.html">Contact Me</a>
+    </section>
+    
     <footer>
-        <p>&copy; Koo Kim & Delta's Math Academy | All rights reserved</p>
+        <p>&copy; 2025 Koo Kim & Delta's Math Academy | All rights reserved</p>
     </footer>
+
 </body>
 </html>
