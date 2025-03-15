@@ -5,24 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff6b6b, #f4a261); /* Halloween-inspired gradient */
+            color: #fff;
+            height: 100%;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* Smooth scrolling for the page */
+        }
+
+        header {
+            background-color: #2a2a2a; /* Dark grey for the header */
+            color: orange;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        section {
+            margin: 30px 10%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+
+        section h2, section h3 {
+            text-align: center;
+            color: #f4a261; /* Orange text */
+        }
+
+        section h3 {
+            font-size: 1.3rem;
+            font-weight: normal;
+        }
+
+        .book-links {
+            text-align: center;
+            background-color: #333; /* Dark background for the section */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #2a2a2a;
+            color: orange;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* New background color for Preview of My Book section */
+        .book-preview {
+            background-color: #6a4e23; /* Darker brown color */
+            margin-top: 30px;
+        }
+
+        /* Center the text inside the preview box */
+        .book-preview p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        /* Uniform font size and color for all paragraphs in boxes */
+        .book-preview p, .book-links p, section h3 {
+            font-size: 1.1rem; /* Uniform font size */
+            color: white; /* White text color */
+        }
+
+        /* Styling for the button section */
+        .button-section {
+            text-align: center;
+            margin-top: 40px; /* Added margin between content and buttons */
+        }
+
+        .button-section a {
+            background-color: #2a2a2a;
+            color: orange;
+            padding: 12px 30px;
+            margin: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-section a:hover {
+            background-color: #f4a261; /* Orange color on hover */
+        }
+
+        /* Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            section {
+                margin: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <body style="background-color: cadetblue;"></body>
     <header>
         <h1>Books</h1>
-        <nav>
-            <ul>
-            </ul>
-        </nav>
     </header>
 
     <section>
-        <h2> Updated News About My Books</h2>
+        <h2>Book Publishing Updates</h2>
         <h3>March 12th: I am currently writing an educational book for high school students on Euclidean Geometry, Trigonometry, and a bit of Non-Euclidean Geometry. My team and I hope to finish the book by the end of 2026; however, the publication date is yet to be determined.</h3>
+    </section>
+
+    <section class="book-links">
+        <h2>Links to Buy My Book</h2>
+        <p>Stay tuned for updates on where to purchase my upcoming book!</p>
+    </section>
+
+    <section class="book-preview">
+        <h2>Preview of My Book</h2>
+        <p>Here you will find a preview of my book once it's ready for release. For now, stay tuned for more updates!</p>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="button-section">
+        <a href="index.html">Home</a>
+        <a href="delta.html">Bibliography</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Research Paper Publications, Programming Codes, & Scripts</a>
+        <a href="tutoring.html">Tutoring Services</a>
+        <a href="lectures.html">Live Lectures</a>
+        <a href="contact.html">Contact Me</a>
     </section>
 
     <footer>
         <p>&copy; Koo Kim & Delta's Math Academy | All rights reserved</p>
     </footer>
+
 </body>
 </html>
