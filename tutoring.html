@@ -5,30 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutoring</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Golden State Warriors Theme Colors */
+        :root {
+            --gold: #FDB927; /* Golden State Warriors Gold */
+            --blue: #006BB6; /* Golden State Warriors Blue */
+            --dark-blue: #003A6D;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: var(--blue);
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        header nav ul li a:hover {
+            background-color: var(--gold); /* Golden color on hover */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: var(--white);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: var(--blue);
+        }
+
+        h3 {
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .tutoring-updates {
+            background-color: var(--gold);
+            color: var(--dark-blue);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tutoring-updates ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tutoring-updates ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .tutoring-history {
+            background-color: var(--blue);
+            color: var(--white);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tutoring-history ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tutoring-history ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the button section */
+        .button-section {
+            text-align: center;
+            margin-top: 30px; /* Added margin between the content and the buttons */
+        }
+
+        .button-section a {
+            background-color: var(--blue);
+            color: var(--white);
+            padding: 12px 30px;
+            margin: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-section a:hover {
+            background-color: var(--gold); /* Golden color on hover */
+        }
+
+        footer {
+            background-color: var(--blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsiveness for smaller screens */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <body style="background-color: cadetblue;"></body>
     <header>
-        <h1>Tutoring</h1>
-        <nav>
-            <ul>
-            </ul>
-        </nav>
+        <h1>Tutoring Services</h1>
     </header>
 
     <section>
         <h2>Updated News About My Tutoring Services</h2>
         <h3>March 12th: I offer mathematics course tutoring in three different ways, all of which are free of charge!</h3>
 
-        <p>1. Through the Learn To Be organization (you must create an account to receive tutoring from me). <p>
-        <p>2. You can email me to request private tutoring; however, there is no guarantee that I will accept the request due to my overcommitted schedule this year. <p>
-        <p>3. You can participate in my asynchronous tutoring sessions, where lecture videos will be posted online, and I can send you homework problems. <p>
+        <p>1. Through the Learn To Be organization (you must create an account to receive tutoring from me).</p>
+        <p>2. You can email me to request private tutoring; however, there is no guarantee that I will accept the request due to my overcommitted schedule this year.</p>
+        <p>3. You can participate in my asynchronous tutoring sessions, where lecture videos will be posted online, and I can send you homework problems.</p>
         
         <p>In Learn To Be, you will be able to see my available times; however, for private tutoring, you will likely need to check with me to find a time that works for both of us.</p>
     </section>
 
+    <!-- Tutoring Updates Section -->
+    <section class="tutoring-updates">
+        <h2>Tutoring Updates</h2>
+        <p>Stay up to date with the latest tutoring news:</p>
+    
+    </section>
+
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="button-section">
+        <a href="index.html">Home</a>
+        <a href="delta.html">Bibliography</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Research Paper Publications, Programming Codes, & Scripts</a>
+        <a href="books.html">Books</a>
+        <a href="lectures.html">Live Lectures</a>
+        <a href="contact.html">Contact Me</a>
+    </section>
+
     <footer>
-        <p>&copy; Koo Kim & Delta's Math Academy | All rights reserved</p>
-    </footer> 
+        <p>&copy; 2025 Koo Kim & Delta's Math Academy | All rights reserved</p>
+    </footer>
 </body>
 </html>
