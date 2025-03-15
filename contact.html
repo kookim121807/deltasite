@@ -4,35 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* BTS Jimin Theme */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #b3b3cc, #6600cc); /* Soft purple to dark purple */
+            color: white;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #6600cc; /* Dark purple */
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: white;
+            font-family: 'Verdana', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            font-family: 'Verdana', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff66b2; /* Pink hover effect */
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2); /* Slight zoom effect on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6600cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        /* Buttons Section */
+        .button-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .button-section a {
+            background-color: #ff66b2;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        .button-section a:hover {
+            background-color: #6600cc; /* Dark purple hover effect */
+        }
+    </style>
 </head>
 <body>
-    <body style="background-color: cadetblue;"></body>
+
     <header>
         <h1>Contact Me</h1>
-        <nav>
-            <ul>
-            </ul>
-        </nav>
     </header>
 
     <section>
-        <h2>Contact Information</h2>
+        <h2 class="section-title">Contact Information</h2>
         <p>Feel free to reach out to me via email or social media!</p>
         <p>School Email: <a href="mailto:kook26@rism.ac.th">kook26@rism.ac.th</a></p>
         <p>Personal Email: <a href="mailto:koonius@gmail.com">koonius@gmail.com</a></p>
-        <a href="https://www.instagram.com/deltarions_legacystarts/" target="_blank">
-            <img src="./insta.jpg" alt="Instagram Icon" / width="50" height="50">
-            
-            <a href="https://www.linkedin.com/in/koo-kim-845724318/" target="_blank">
-                <img src="./link.png" alt="Instagram Icon" / width="50" height="50">
 
-           
-          </a>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/deltarions_legacystarts/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/koo-kim-845724318/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+            </a>
+            <a href="mailto:koonius@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail Icon">
+            </a>
+        </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="button-section">
+        <a href="index.html">Home</a>
+        <a href="delta.html">Bibliography</a>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Research Paper Publications, Programming Codes, & Scripts</a>
+        <a href="books.html">Books</a>
+        <a href="tutoring.html">Tutoring Services</a>
+        <a href="lectures.html">Live Lectures</a>
     </section>
 
     <footer>
-        <p>&copy; Koo Kim | All rights reserved</p>
+        <p>&copy; 2025 Koo Kim | All rights reserved</p>
     </footer>
+
 </body>
 </html>
