@@ -3,27 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Paper Publications</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Research Paper Publications & Programming Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Background Theme (K-pop style colors) */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff66b2, #8a2be2); /* Bold pink and purple */
+            color: #fff;
+            text-align: center;
+            position: relative;
+            height: 100%; /* Ensures scrolling ability */
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #ff66b2, #8a2be2); /* Pink to purple gradient */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            margin-bottom: 10px; /* Reduced margin between sections */
+        }
+
+        .section-title {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: left;
+            color: #333;
+        }
+
+        .content-box h2 {
+            color: #ff66b2;
+            font-size: 1.8rem;
+        }
+
+        .content-box p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: #8a2be2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Icon Styling */
+        .icon {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: #ff66b2;
+        }
+
+        /* Flexbox for Research Paper and Programming Sections */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .research-section, .programming-section {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 10px;
+            width: 45%; /* Each section takes up 45% of the width */
+        }
+
+        /* Upload Section */
+        .upload-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 10px; /* Reduced margin */
+        }
+
+        .upload-box {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: center;
+        }
+
+        .upload-box a {
+            color: #8a2be2;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        /* Buttons Section */
+        .button-section {
+            margin: 30px 0;
+        }
+
+        .button-section a {
+            background-color: #ff66b2;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-section a:hover {
+            background-color: #8a2be2;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .research-section, .programming-section {
+                width: 100%; /* Full width on small screens */
+            }
+
+            .upload-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .button-section a {
+                width: 100%; /* Full width on small screens */
+                text-align: center;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <body style="background-color: cadetblue;"></body>
+
     <header>
-        <h1>Research Paper Publications</h1>
-        <nav>
-            <ul>
-            </ul>
-        </nav>
+        <h1>Research Paper Publications, Programming Codes, & Scripts</h1>
     </header>
 
-    <section>
-        <h2>My Research Papers</h2>
-        <h3>March 12th: Updated Progress on Vegas Gambler's Dilemma Theory</h3>
-        <p>Unfortunately, due to unforeseen circumstances and the loss of team members during the development of my first research paper on Geometrical Probability, Game Theory, and Statistics, my remaining teammates and I have decided not to publish it. We sincerely apologize for any inconvenience this may have caused. However, we are excited to announce that we will soon be starting our second research paper, which will primarily focus on geometry, with potential elements of number theory and topology</p>
+    <!-- Flex container for Research and Programming Sections -->
+    <section class="flex-container">
+        <!-- Research Papers Section -->
+        <div class="research-section">
+            <h2 class="section-title">📚 Mathematics Research Papers</h2>
+            <div class="content-box">
+                <h2>March 12th: Updated Progress on Vegas Gambler's Dilemma Theory</h2>
+                <p>Unfortunately, due to unforeseen circumstances and the loss of team members during the development of my first research paper on Geometrical Probability, Game Theory, and Statistics, my remaining teammates and I have decided not to publish it.</p>
+                <p>We are excited to announce that we will soon be starting our second research paper, which will primarily focus on geometry, with potential elements of number theory and topology.</p>
+            </div>
+        </div>
+
+        <!-- Programming Section -->
+        <div class="programming-section">
+            <h2 class="section-title">💻 Programming Codes & Scripts</h2>
+            <div class="content-box">
+                <h2>Python Scripts for Data Analysis</h2>
+                <p>This section includes various Python scripts used for data analysis, machine learning, and computational mathematics. You can explore different algorithms and functions implemented for practical applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="upload-box">
+            <h3>Research Paper</h3>
+            <a href="#">Download the Latest Research Paper</a>
+        </div>
+        <div class="upload-box">
+            <h3>Programming Code</h3>
+            <a href="#">Download the Latest Code</a>
+        </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="button-section">
+        <a href="index.html">Home</a>
+        <a href="delta.html">Bibliography</a>
+        <a href="cv.html">CV</a>
+        <a href="books.html">Books</a>
+        <a href="tutoring.html">Tutoring Services</a>
+        <a href="lectures.html">Live Lectures</a>
+        <a href="contact.html">Contact Me</a>
     </section>
 
     <footer>
-        <p>&copy; Koo Kim & Delta's Math Academy | All rights reserved</p>
+        <p>&copy; 2025 Koo Kim & Delta's Math Academy | All rights reserved</p>
     </footer>
+
 </body>
 </html>
